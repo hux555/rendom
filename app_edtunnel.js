@@ -6,8 +6,8 @@ const net = require('net');
 const wss = new WebSocket.Server({ port: 443 });
 let userID = 'd342d11e-d424-4583-b36e-524ab1f0afa4';
 //let proxyIP = "64.68.192." + Math.floor(Math.random() * 255);
-let proxyIP = "64.68.192." + Math.floor(Math.random() * 255);
-let address = 'cc6.jlin52.eu.org';
+let proxyIP = "cc6.jlin52.eu.org";
+let address = '';
 let portWithRandomLog = '';
 const log = (/** @type {string} */ info, /** @type {string | undefined} */ event) => {
     console.log(`[${address}:${portWithRandomLog}] ${info}`, event || '');
